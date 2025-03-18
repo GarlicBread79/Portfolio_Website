@@ -1,103 +1,311 @@
+<!-- 
+  ===========================================================
+  File: index.html
+  Author: Joshua Dornfeldt
+  Description: Main HTML structure for my
+               personal portfolio website. Showcases projects,
+               skills, and contact information.
+  ===========================================================
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- 
+    Meta tags for responsive design and basic SEO
+    - charset sets the character encoding to UTF-8
+    - viewport ensures mobile-friendly scaling
+    - description helps with search engine results
+  -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="My Portfolio Website">
+
+  <!-- Title appears in browser tab and search engine results -->
   <title>Joshua Dornfeldt Portfolio</title>
-  <!-- Link to external CSS -->
+
+  <!-- 
+    Link to external CSS file for styling. 
+    Ensure style.css is in the same directory or adjust path accordingly.
+  -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Header -->
+  <!-- 
+    Header Section:
+    - Contains site title, a typewriter effect, and a short tagline
+  -->
   <header>
     <div class="container">
+      <!-- 
+        h1 will be populated by script.js using typewriter effect.
+        The p element displays a quick tagline.
+      -->
       <h1 id="typewriter"></h1>
       <p>Software Engineer | Problem Solver | Lifelong Learner</p>
     </div>
   </header>
 
-  <!-- Navigation -->
+  <!-- 
+    Navigation Bar:
+    - Sticky navbar (made sticky via CSS) for quick access to sections:
+      About, Projects, and Contact Me
+  -->
   <nav>
     <a href="#about">About</a>
     <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
+    <a href="#contact">Contact Me</a>
   </nav>
 
-  <!-- About Section -->
+  <!-- 
+    About Section:
+    - Includes a brief biography and a headshot for my portfolio website
+  -->
   <section id="about">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>I'm a recent Computer Science graduate with a passion for developing innovative software solutions. I specialize in software development, machine learning, and system design.</p>
+    <div class="container about-container">
+      <div class="about-headshot">
+        <img src="Photo.JPG" alt="Headshot of Joshua Dornfeldt" />
+      </div>
+
+      <div class="about-bio">
+        <h2>About Me</h2>
+        <p>
+          Hello! I am Joshua Dornfeldt, a recent Computer Science graduate with
+          experience in software engineering, machine learning, and web development.
+        </p>
+        <p>
+          I enjoy creating efficient, innovative solutions to complex problems and thrive in
+          collaborative, fast-paced environments. My background includes hands-on projects,
+          teamwork in high-volume settings, and a dedication to continuous learning.
+        </p>
+        <p>
+          I am currently seeking a full-time role as a Software Engineer or Machine
+          Learning Engineer where I can apply my skills, tackle challenging problems,
+          and make a meaningful impact.
+        </p>
+      </div>
     </div>
   </section>
 
-  <!-- Projects Section -->
-<section id="projects">
-  <div class="container">
-    <h2>Projects</h2>
+  <!-- 
+    Projects Section:
+    - Highlights each project with dates, overviews, key achievements,
+      architecture, challenges, and future enhancements.
+  -->
+  <section id="projects">
+    <div class="container">
+      <h2>Projects</h2>
 
-    <!-- Project 1: Web-Based EMS System -->
-    <div class="project">
-      <h3>Project 1: Web-Based EMS System</h3>
-      <ul>
-        <li>
-          <p>In my software engineering capstone, we developed a web-based EMS application for Sheboygan County with an intuitive UI, leveraging tools like WIX or Google Sites.</p>
-        </li>
-        <li>
-          <p>The design integrated with MongoDB, with SQL-based ER diagrams for protocol indexing.</p>
-        </li>
-        <li>
-          <p>The UI adapted to backend requirements and user needs, ensuring easy updates and a searchable index.</p>
-        </li>
-        <li>
-          <p>The project involved multiple meetings with EMS staff to refine protocols and layout, providing a functional and user-friendly final product.</p>
-        </li>
-      </ul>
+      <!-- Project 1: Web-Based EMS System -->
+      <div class="project">
+        <h3>Project 1: Web-Based EMS System</h3>
+        <!-- project-dates class displays italicized timeline -->
+        <p class="project-dates">January 2024 – May 2024</p>
+
+        <h4>Overview</h4>
+        <p>
+          A web-based EMS application developed for Sheboygan County, leveraging WIX/Google Sites 
+          for a user-friendly interface. This system ensures easy protocol indexing, real-time 
+          updates, and a streamlined layout based on EMS staff feedback.
+        </p>
+
+        <h4>Architecture & Tools</h4>
+        <ul>
+          <li><strong>Technologies:</strong> WIX or Google Sites for UI, MongoDB for data storage, SQL-based ER diagrams.</li>
+          <li><strong>Meetings & Feedback:</strong> Multiple sessions with EMS staff to refine protocols and user flow.</li>
+        </ul>
+
+        <h4>Key Achievements</h4>
+        <ul>
+          <li>Implemented a <em>searchable index</em> for protocols, ensuring faster retrieval of critical information.</li>
+          <li>Adapted the UI to changing backend requirements, maintaining a user-friendly experience throughout.</li>
+          <li>Delivered a functional, easily maintainable final product after multiple feedback rounds.</li>
+        </ul>
+
+        <h4>Challenges & Solutions</h4>
+        <ul>
+          <li><strong>Rapid UI Changes:</strong> Used flexible site-building tools (WIX/Google Sites) to incorporate new EMS protocols without breaking the design.</li>
+          <li><strong>Integration:</strong> Ensured MongoDB data could be linked to a visual front end, bridging no-code tools with a robust backend.</li>
+        </ul>
+
+        <h4>Lessons Learned & Future Enhancements</h4>
+        <ul>
+          <li>Integrating a custom front end for deeper control over the design and data workflows.</li>
+          <li>Adding real-time alerts or push notifications for protocol updates.</li>
+          <li>Expanding to a Docker-based deployment for easier scaling and portability.</li>
+        </ul>
+      </div>
+
+      <!-- Project 2: Full-Stack Fitness Tracker -->
+      <div class="project">
+        <h3>Project 2: Full-Stack Fitness Tracker</h3>
+        <p class="project-dates">October 2024 – February 2025</p>
+
+        <h4>Overview</h4>
+        <p>
+          A full-stack web application that helps users log workouts, track progress, and manage 
+          personal profiles in a secure, responsive environment. Built to encourage consistent 
+          exercise and provide clear insights into performance improvement over time.
+        </p>
+
+        <h4>Key Achievements</h4>
+        <ul>
+          <li>Engineered a full-stack app with React, Node.js, Express, and MongoDB, enabling up to <strong>100 workout logs per day</strong>.</li>
+          <li>Developed a secure RESTful API with <strong>99% reliability</strong> in local testing, cutting response times by <strong>37%</strong> from initial prototypes.</li>
+          <li>Optimized MongoDB schemas, reducing query execution times by <strong>25%</strong> under simulated production loads.</li>
+          <li>Integrated React Hook Form for advanced validation, lowering form submission errors by <strong>25%</strong>.</li>
+        </ul>
+
+        <h4>Architecture & Tools</h4>
+        <ul>
+          <li><strong>Front End:</strong> React (UI), React Hook Form (validation), Bootstrap (responsive design).</li>
+          <li><strong>Back End:</strong> Node.js, Express, RESTful API for CRUD operations.</li>
+          <li><strong>Database:</strong> MongoDB for user profiles and workout logs.</li>
+          <li><strong>Version Control:</strong> Git & GitHub with separate deployments for front and back ends.</li>
+        </ul>
+
+        <h4>Challenges & Solutions</h4>
+        <ul>
+          <li><strong>Data Consistency:</strong> Schema validation and server-side checks ensured integrity across user interactions.</li>
+          <li><strong>Performance Bottlenecks:</strong> Efficient indexing and schema design cut query times under higher load.</li>
+          <li><strong>Validation & Error Handling:</strong> Combined React Hook Form and Express validation to prevent invalid inputs.</li>
+        </ul>
+
+        <h4>Live URL</h4>
+        <!-- 
+          A "Coming Soon" button that is currently disabled to show planned release date 
+          without linking anywhere yet, because there is no URL yet
+        -->
+        <p>
+          <button class="btn coming-soon" disabled>Coming Soon (April 2025)</button>
+        </p>
+
+        <h4>Lessons Learned & Future Enhancements</h4>
+        <ul>
+          <li>Implementing user authentication and social login to expand user accessibility.</li>
+          <li>Adding data visualization (Chart.js or Recharts) for more engaging progress analytics.</li>
+          <li>Exploring Docker-based containerization for simpler, scalable deployments.</li>
+        </ul>
+
+        <p>
+          <a href="https://github.com/GarlicBread79/fitness-tracker" target="_blank" class="btn">
+            View GitHub Repository for Full-Stack Fitness Tracker
+          </a>
+        </p>
+      </div>
+
+      <!-- Project 3: Fake News Detection System -->
+      <div class="project">
+        <h3>Project 3: Fake News Detection System</h3>
+        <p class="project-dates">November 2024 – December 2025</p>
+
+        <h4>Overview</h4>
+        <p>
+          A machine learning model to classify news articles as real or fake, comparing 
+          <strong>Logistic Regression</strong> (85% accuracy) and a <strong>fine-tuned BERT model</strong> (84% ROC-AUC).
+        </p>
+
+        <h4>Key Achievements</h4>
+        <ul>
+          <li>Improved classification ROC-AUC by <strong>6.8%</strong> using advanced preprocessing techniques.</li>
+          <li>Optimized PyTorch model training, boosting performance by <strong>15%</strong> over baseline methods.</li>
+        </ul>
+
+        <h4>Technologies Used</h4>
+        <ul>
+          <li>Machine Learning: Logistic Regression, BERT (Hugging Face Transformers)</li>
+          <li>Libraries: PyTorch, TensorFlow, Scikit-Learn</li>
+          <li>NLP Techniques: TF-IDF vectorization, tokenization, text preprocessing</li>
+          <li>Data Visualization: Matplotlib, Seaborn (ROC Curves, Bar Charts)</li>
+          <li>Tools: Jupyter Notebook, Git, Pandas</li>
+        </ul>
+
+        <h4>Model Performance Comparison</h4>
+        <table>
+          <tr>
+            <th>Model</th>
+            <th>Accuracy (%)</th>
+            <th>ROC-AUC (%)</th>
+          </tr>
+          <tr>
+            <td>Logistic Regression</td>
+            <td>85.0</td>
+            <td>88.0</td>
+          </tr>
+          <tr>
+            <td>BERT (Fine-Tuned)</td>
+            <td>65.0</td>
+            <td>84.0</td>
+          </tr>
+        </table>
+        <img src="output.png" alt="Graph showing model performance comparisons">
+
+        <h4>Key Challenges & Solutions</h4>
+        <ul>
+          <li><strong>Data Limitation:</strong> Addressed small dataset size with TF-IDF and tokenization for better feature representation.</li>
+          <li><strong>Overfitting Prevention:</strong> Applied dropout & weight decay in BERT training to generalize well.</li>
+          <li><strong>Performance Bottleneck:</strong> Leveraged PyTorch’s Trainer API for GPU-based training, boosting performance by 15%.</li>
+        </ul>
+
+        <h4>How It Works</h4>
+        <ol>
+          <li>Text Preprocessing: Tokenization, stopword removal, TF-IDF transformation.</li>
+          <li>Feature Engineering: Created ML-ready representations with TF-IDF & BERT embeddings.</li>
+          <li>Model Training: Logistic Regression vs. Fine-Tuned BERT using PyTorch.</li>
+          <li>Evaluation & Visualization: Compared models via accuracy, ROC-AUC, classification reports.</li>
+          <li>Real-World Testing: Users can input any article to check its authenticity.</li>
+        </ol>
+
+        <h4>Future Improvements</h4>
+        <ul>
+          <li>Larger Dataset: Expanding training data for better generalization.</li>
+          <li>Metadata Features: Incorporating author credibility & source reputation.</li>
+          <li>Web Interface: Deploying as a user-friendly web app for public use.</li>
+        </ul>
+        <p>
+          <a href="https://github.com/GarlicBread79/Fake_News_Detection" target="_blank" class="btn">
+            View GitHub Repository for Fake News Detection System
+          </a>
+        </p>
+      </div>
     </div>
+  </section>
 
-    <!-- Project 2: Fake News Detection System -->
-    <div class="project">
-      <h3>Project 2: Fake News Detection System</h3>
-      <ul>
-        <li>
-          <p>Developed a machine learning-based system to classify news articles as real or fake using Logistic Regression and fine-tuned BERT models.</p>
-        </li>
-        <li>
-          <p>Conducted error analysis to identify misclassifications and improve performance through preprocessing techniques like TF-IDF and tokenization.</p>
-        </li>
-        <li>
-          <p>Designed and deployed an interactive web app using Streamlit for real-time predictions, making the system accessible to users.</p>
-        </li>
-        <li>
-          <p>Improved system accuracy and reliability through data cleaning, feature engineering, and model evaluation.</p>
-        </li>
-      </ul>
-    </div>
-
-  </div>
-</section>
-
-  <!-- Contact Section -->
+  <!-- 
+    Contact Section:
+    - Provides email, LinkedIn, GitHub, and an optional statement of availability
+  -->
   <section id="contact">
     <div class="container">
       <h2>Contact Me</h2>
+      <p>Let's connect! Feel free to reach out via Linkedin or email.</p>
       <p>Email: <a href="mailto:jdornfeldt45@gmail.com">jdornfeldt45@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/joshua-dornfeldt-32a298298/" target="_blank">Visit My Profile</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/joshua-dornfeldt-32a298298/" target="_blank">View My LinkedIn Profile</a></p>
+      <p>GitHub: <a href="https://github.com/Garlicbread79" target="_blank">View my GitHub Profile</a></p>
+      <p><em>I am always open to discussing new opportunities in software engineering or machine learning.</em></p>
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- 
+    Footer Section:
+    - Dynamically displays the current year using JavaScript
+  -->
   <footer>
     <div class="container">
       <p>&copy; <span id="year"></span> Joshua Dornfeldt. All Rights Reserved.</p>
     </div>
   </footer>
 
-  <!-- Scroll-to-Top Button -->
-  <button id="scroll-top">Top</button>
+  <!-- 
+    Scroll-to-Top Button:
+    - Displays a small circular arrow for returning to top
+  -->
+  <button id="scroll-top" title="Scroll to top">↑</button>
 
-  <!-- Modal -->
+  <!-- 
+    This is a modal for Project Details (if needed):
+    - Currently used as a placeholder if I need to expand
+  -->
   <div id="modal" class="modal">
     <div class="modal-content">
       <span class="close">&times;</span>
@@ -106,7 +314,7 @@
     </div>
   </div>
 
-  <!-- Link to external JavaScript -->
+  <!-- Link to external JavaScript file for functionality (typewriter, scrolling, etc.) -->
   <script src="script.js"></script>
 </body>
 </html>
