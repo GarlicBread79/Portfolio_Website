@@ -1,7 +1,7 @@
 # Joshua Dornfeldt Portfolio Website
 
 ## Overview
-This repository contains the source code for my personal portfolio website, which showcases my projects, technical skills, and professional background as a Software Engineer and Machine Learning Engineer. The site is built using HTML, CSS, and JavaScript, and follows industry best practices in responsive design, code documentation, and version control.
+This repository contains the source code for my personal portfolio website, which showcases my projects, technical skills, and professional background as a Software Engineer and Machine Learning Engineer. The site is built using HTML, CSS, and JavaScript, and uses responsive design, code documentation, and version control.
 
 ## Features
 - **Responsive Design:** Optimized for desktops, tablets, and mobile devices.
