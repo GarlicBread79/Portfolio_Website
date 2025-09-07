@@ -202,12 +202,8 @@ footer {
   margin-bottom: 1rem;
 }
 
-/* "Coming Soon" Disabled Button 
-   - For project and URLs not yet live, to show planned release date
-*/
 .coming-soon {
-  background-color: #999;  
-  cursor: not-allowed;     
+  background-color: #999;      
   opacity: 0.7;           
 }
 
