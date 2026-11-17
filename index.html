@@ -95,6 +95,51 @@
     <div class="container">
       <h2>Projects</h2>
 
+      <!-- Hackathon Project | HackGB - October 2026 -->
+<div class="project">
+  <h3>Small Business Cash Flow App - Hackathon</h3>
+  <!-- project-dates class displays italicized timeline -->
+  <p class="project-dates">October 2026</p>
+
+  <h4>Overview</h4>
+  <p>
+    Collaborated with a 4-person hackathon team to build a full-stack financial management
+    application that uses AI to analyze small business financial data and generate
+    personalized recommendations.
+  </p>
+
+  <h4>Architecture &amp; Tools</h4>
+  <ul>
+    <li><strong>My Role:</strong> Front end, back end, and UI/UX design.</li>
+    <li><strong>Technologies:</strong> Next.js, TypeScript, Tailwind CSS, shadcn/ui, and Recharts.</li>
+    <li><strong>AI:</strong> OpenAI API for conversational interviews, financial document analysis, and AI-generated insights.</li>
+    <li><strong>Development Tools:</strong> Claude Code for implementation support and troubleshooting.</li>
+  </ul>
+
+  <h4>Key Achievements</h4>
+  <ul>
+    <li>Built front-end and back-end functionality in Next.js and TypeScript, including the OpenAI API integration.</li>
+    <li>Designed responsive interfaces and interactive dashboards that visualize financial metrics, cash flow, and business projections.</li>
+    <li>Delivered a working full-stack application within the hackathon.</li>
+  </ul>
+
+  <h4>Challenges &amp; Solutions</h4>
+  <ul>
+    <li><strong>Keeping AI honest with money:</strong> Early on, the AI would recompute figures and get them wrong. We moved every calculation into deterministic code and had the AI explain the numbers instead of producing them.</li>
+    <li><strong>Getting charts out of an LLM:</strong> Free-form text never produced usable visuals, so we redesigned the action plan around a strict JSON schema with a fixed set of chart types, letting the AI choose the chart while the app draws it.</li>
+    <li><strong>Scope changes:</strong> We planned to link bank accounts through Plaid but switched to document import, which was faster to build and needed no bank credentials.</li>
+  </ul>
+
+  <h4>Lessons Learned &amp; Future Enhancements</h4>
+  <ul>
+    <li>AI is strong at conversation, reading documents, and explaining, but it is not a calculator. The best results came from pairing it with verified calculations.</li>
+    <li>Structured outputs (JSON schemas) turn an AI from a text generator into a reliable part of an app.</li>
+    <li>Small, focused commits and a shared plan in the repo let a team move fast without stepping on each other.</li>
+    <li>Next: bank connections through Plaid, manufacturing unit economics (cost per unit, contribution margin, break-even volume), saved scenario comparisons with exportable PDF reports for lenders, and pilot testing with small manufacturers in the Green Bay area.</li>
+  </ul>
+</div>
+
+
       <!-- Project 1: Web-Based EMS System -->
       <div class="project">
         <h3>Project 1: Web-Based EMS System</h3>
